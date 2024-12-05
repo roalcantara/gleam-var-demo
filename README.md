@@ -19,10 +19,34 @@ A simple glem demo app
 - [gitlint][9]
 - [gleam][11]
 
+## Development
+
+This [guide][12] shows you how to create and develop a [Gleam][11] project.
+
+```bash
+# setup
+gleam new vars              # create the project
+cd vars                     # navigate into the project directory
+
+# develop
+gleam run                   # run the project
+gleam test                  # run the tests
+gleam add envoy argv        # add the envoy argv dependencies
+gleam add --dev gleescript  # add the gleescript dev dependency
+
+# build
+gleam build                 # build the project
+gleam run -m gleescript     # compile the program to an escript
+
+# run
+./vars get USER             # run the program
+```
+
 ## Acknowledgements
 
 - [Standard Readme][4]
 - [Conventional Commits][10]
+- [Writing Gleam | Learn to work with Gleam projects][12]
 
 ## Contributing
 
@@ -46,3 +70,4 @@ The project is available as open source under the terms of the [MIT][1] [License
 [9]: [https://jorisroovers.com/gitlint] 'git commit message linter'
 [10]: [https://conventionalcommits.org] 'Conventional Commits'
 [11]: [https://glem.dev] 'Gleam is a friendly language for building type-safe systems that scale!'
+[12]: [https://gleam.run/writing-gleam] 'Writing Gleam | Learn to work with Gleam projects'
